@@ -8,8 +8,8 @@
   "name":"objFeather",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Character stuff",
+    "path":"folders/Objects/Character stuff.yy",
   },
   "parentObjectId":null,
   "persistent":false,

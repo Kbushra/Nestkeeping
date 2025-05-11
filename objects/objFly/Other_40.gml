@@ -1,0 +1,1 @@
+if instance_number(objFly) > 15 { instance_destroy(); }

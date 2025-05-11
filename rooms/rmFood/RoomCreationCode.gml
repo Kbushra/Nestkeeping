@@ -1,0 +1,1 @@
+global.task = "Find food for your family";

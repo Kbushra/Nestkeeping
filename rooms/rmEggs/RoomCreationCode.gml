@@ -1,0 +1,1 @@
+global.task = "Hatch your eggs";

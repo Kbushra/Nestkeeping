@@ -9,7 +9,10 @@
     "name":"Terrain",
     "path":"folders/Objects/Terrain.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"objDeath",
+    "path":"objects/objDeath/objDeath.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

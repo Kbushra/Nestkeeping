@@ -1,0 +1,1 @@
+prevCamPos = 0;

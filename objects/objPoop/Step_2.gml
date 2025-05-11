@@ -1,0 +1,2 @@
+yMovement += grav;
+y += yMovement;

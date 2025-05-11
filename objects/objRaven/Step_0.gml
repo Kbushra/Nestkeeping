@@ -1,0 +1,1 @@
+direction = point_direction(x, y, objNestFront.x + 12, objNestFront.y + 14);

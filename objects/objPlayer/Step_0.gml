@@ -1,6 +1,6 @@
 if sprite_index == sprBirdI || sprite_index == sprBirdF
 {
-	if image_index < 1 { CreateFeathers(irandom_range(1, 3)); }
+	if image_index <= 1 { createFeathers(irandom_range(1, 3)); }
 	else { image_speed = 0; }
 }
 else { image_speed = 1; }
@@ -12,7 +12,7 @@ if global.spaceP
 	image_index = 0;
 	image_speed = 1;
 	yMovement = -5;
-	CreateFeathers(irandom_range(3, 6));
+	createFeathers(irandom_range(3, 6));
 }
 
 if !grounded
@@ -20,9 +20,9 @@ if !grounded
 	if yMovement >= 0 && global.spaceH
 	{
 		sprite_index = sprBirdG;
-		yMovement = lerp(yMovement, 1, 0.1);
+		yMovement = lerp(yMovement, 0.7, 0.1);
 		grav = 0;
-		spd = 1.5;
+		spd = 4;
 	}
 	else
 	{
@@ -36,11 +36,13 @@ if !grounded
 	
 	if !place_free(x + xMovement, y + yMovement)
 	{
+		var iterations = 0;
 		while place_free(x + sign(xMovement)*2, y + sign(yMovement)*2)
 		{
 			x += sign(xMovement);
 			y += sign(yMovement);
-			if sign(xMovement) == 0 && sign(yMovement) == 0 { break; }
+			iterations++;
+			if iterations > abs(xMovement) || iterations > abs(yMovement) { break; }
 		}
 		
 		if !place_free(x + xMovement, y) { xMovement = 0; }
