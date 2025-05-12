@@ -13,12 +13,14 @@ if global.spaceP
 	image_speed = 1;
 	yMovement = -5;
 	createFeathers(irandom_range(3, 6));
+	audio_play_sound(sndFlap, 10, false);
 }
 
 if !grounded
 {
 	if yMovement >= 0 && global.spaceH
 	{
+		if !audio_is_playing(sndGlide) { audio_play_sound(sndGlide, 10, false); }
 		sprite_index = sprBirdG;
 		yMovement = lerp(yMovement, 0.7, 0.1);
 		grav = 0;
@@ -51,12 +53,14 @@ if !grounded
 }
 else { sprite_index = sprBirdI; }
 
+yMovement = clamp(yMovement, -5, 7.5);
 x += xMovement;
 y += yMovement;
 
-if place_free(x, y + 2) { grounded = false; }
-else if !grounded
+if place_free(x, y + 5) { grounded = false; }
+else if !place_free(x, y + 2) && !grounded
 {
+	audio_play_sound(sndGrass, 10, false);
 	grounded = true;
 	xMovement = 0;
 	yMovement = 0;

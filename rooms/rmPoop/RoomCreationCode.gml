@@ -1,1 +1,1 @@
-global.task = "Poop on some humans (Q)";
+global.task = "Poop on some humans (q)";

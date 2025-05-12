@@ -9,7 +9,7 @@
   "bitRate":128,
   "compression":0,
   "conversionMode":0,
-  "duration":32.000023,
+  "duration":15.991247,
   "name":"musDay",
   "parent":{
     "name":"Sounds",

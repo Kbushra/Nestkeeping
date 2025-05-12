@@ -1,5 +1,3 @@
-global.musPos = audio_sound_get_track_position(global.currMusic);
-
 if !global.gameStart { exit; }
 
 camRelativeX += objPlayer.xMovement * 0.4;

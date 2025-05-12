@@ -2,6 +2,7 @@ if place_meeting(x, y, objPlayer)
 {
 	if objPlayer.busy
 	{
+		audio_play_sound(sndPut, 10, false);
 		objPlayer.busy = false;
 		if global.task == "Get sticks to repair nest" { global.progress += 0.25; }
 	}

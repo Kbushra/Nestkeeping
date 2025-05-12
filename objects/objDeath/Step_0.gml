@@ -1,4 +1,4 @@
-if place_meeting(x, y, objPlayerDColl)
+if place_meeting(x, y, objPlayerDColl) && global.gameStart
 {
 	global.gameStart = false;
 	instance_create_layer(x, y, "Managers", objEnd);
@@ -6,4 +6,6 @@ if place_meeting(x, y, objPlayerDColl)
 	
 	with (objPlayer) { createFeathers(irandom_range(10, 15)); }
 	objPlayer.visible = false;
+	
+	audio_play_sound(sndTweet, 10, false);
 }
