@@ -162,13 +162,13 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"rmInit","path":"rooms/rmInit/rmInit.yy",},},
+    {"roomId":{"name":"rmEggs","path":"rooms/rmEggs/rmEggs.yy",},},
     {"roomId":{"name":"rmStick","path":"rooms/rmStick/rmStick.yy",},},
     {"roomId":{"name":"rmFood","path":"rooms/rmFood/rmFood.yy",},},
     {"roomId":{"name":"rmHabitat","path":"rooms/rmHabitat/rmHabitat.yy",},},
     {"roomId":{"name":"rmPoop","path":"rooms/rmPoop/rmPoop.yy",},},
     {"roomId":{"name":"rmMessage","path":"rooms/rmMessage/rmMessage.yy",},},
     {"roomId":{"name":"rmMigration","path":"rooms/rmMigration/rmMigration.yy",},},
-    {"roomId":{"name":"rmEggs","path":"rooms/rmEggs/rmEggs.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

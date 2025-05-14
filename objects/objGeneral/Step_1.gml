@@ -33,7 +33,7 @@ global.poop = keyboard_check_pressed(ord("Q")) && global.task == "Poop on some h
 
 if keyboard_check_pressed(vk_f4) { window_set_fullscreen(!window_get_fullscreen()); }
 
-if global.spaceP && objPlayer.sprite_index == sprBirdS && pos > 18
+if !global.endGame && global.spaceP && objPlayer.sprite_index == sprBirdS && pos > 18
 {
 	objPlayer.sprite_index = sprBirdI;
 	
