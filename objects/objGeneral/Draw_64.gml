@@ -15,7 +15,7 @@ if flag == 1
 	draw_set_color(col);
 	draw_set_halign(fa_middle);
 	
-	draw_text(160, pos, "Press SPACE to flap/awake\nHold SPACE to glide\nUse WASD/Arrows to move (only in air)");
+	draw_text(160, pos, "Use WASD/Arrows to move (only in air)\nHold SPACE to glide\n\nPress SPACE to flap/awake");
 	pos = lerp(pos, 20, 0.1);
 	
 	draw_set_color(c_white);

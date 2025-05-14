@@ -1,1 +1,2 @@
-if instance_number(objFly) > 15 { instance_destroy(); }
+timer--;
+if instance_number(objFly) > 15 && timer <= 0 { instance_destroy(); }

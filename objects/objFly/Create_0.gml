@@ -4,3 +4,5 @@ up = y - 30;
 down = y + 30;
 dir = "U";
 alarm[0] = 30;
+
+timer = 180;
